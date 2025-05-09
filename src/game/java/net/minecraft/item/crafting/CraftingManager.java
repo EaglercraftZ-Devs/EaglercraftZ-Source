@@ -29,7 +29,7 @@ import net.minecraft.world.World;
  * Minecraft 1.8.8 bytecode is (c) 2015 Mojang AB. "Do not distribute!"
  * Mod Coder Pack v9.18 deobfuscation configs are (c) Copyright by the MCP Team
  * 
- * EaglercraftX 1.8 patch files (c) 2022-2025 lax1dude, ayunami2000. All Rights Reserved.
+ * EaglercraftX 1.8 patch files (c) 2022-2024 lax1dude, ayunami2000. All Rights Reserved.
  * 
  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
  * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
@@ -59,7 +59,7 @@ public class CraftingManager {
 		}
 		return instance;
 	}
-
+	
 	private CraftingManager() {
 		(new RecipesTools()).addRecipes(this);
 		(new RecipesWeapons()).addRecipes(this);
@@ -75,6 +75,36 @@ public class CraftingManager {
 		this.recipes.add(new RecipeFireworks());
 		this.recipes.add(new RecipeRepairItem());
 		(new RecipesBanners()).addRecipes(this);
+
+		// Add Netherite Ingot recipe (4 Gold Ingots + 4 Netherite Scraps) - Shapeless
+		this.addShapelessRecipe(new ItemStack(Items.netherite_ingot, 1), // Output: 1 Netherite Ingot
+    		new Object[] {
+        		Items.gold_ingot, Items.gold_ingot, Items.gold_ingot, Items.gold_ingot, // 4 Gold Ingots
+        		Items.netherite_scrap, Items.netherite_scrap, Items.netherite_scrap, Items.netherite_scrap // 4 Netherite Scraps
+    		}
+		);
+
+		// Add Shield recipe
+		this.addRecipe(new ItemStack(Items.shield, 1), // Output: 1 Shield
+			new Object[] {
+				"WIW", // Row 1: Plank, Iron Ingot, Plank
+				"WWW", // Row 2: Plank, Plank, Plank
+				" W ", // Row 3: Empty, Plank, Empty
+				'W', Blocks.planks, // 'W' represents any type of Planks
+				'I', Items.iron_ingot // 'I' represents an Iron Ingot
+			}
+		);
+
+		// Add Netherite Block recipe
+		this.addRecipe(new ItemStack(Blocks.netherite_block, 1), // Output: 1 Netherite Block
+			new Object[] {
+				"NNN", // Row 1: Netherite Block, Netherite Block, Netherite Block
+				"NNN", // Row 2: Netherite Block, Netherite Block, Netherite Block
+				"NNN", // Row 3: Netherite Block, Netherite Block, Netherite Block
+				'N', Blocks.planks, // 'W' represents netherite ingots
+			}
+		);
+
 		this.addRecipe(new ItemStack(Items.paper, 3), new Object[] { "###", Character.valueOf('#'), Items.reeds });
 		this.addShapelessRecipe(new ItemStack(Items.book, 1),
 				new Object[] { Items.paper, Items.paper, Items.paper, Items.leather });
@@ -83,6 +113,77 @@ public class CraftingManager {
 		this.addRecipe(new ItemStack(Blocks.oak_fence, 3),
 				new Object[] { "W#W", "W#W", Character.valueOf('#'), Items.stick, Character.valueOf('W'),
 						new ItemStack(Blocks.planks, 1, BlockPlanks.EnumType.OAK.getMetadata()) });
+		//eaglerz stuff
+		this.addRecipe(new ItemStack(Blocks.cherry_planks, 4), // craft 4 cherry planks from a cherry log
+			    new Object[] {
+			        "L", // Represents the crafting grid
+			        Character.valueOf('L'), // 'L' will be replaced by the cherry log item
+			        new ItemStack(Blocks.cherry_log) // This represents the cherry log
+			    });
+		this.addRecipe(new ItemStack(Blocks.cherry_trapdoor, 2), // Crafts the cherry trapdoor
+		    new Object[] {
+		        "PPP", // First row: P for planks
+		        "PPP", // Second row: P for planks
+		        Character.valueOf('P'), // 'P' is the character used in the recipe
+		        new ItemStack(Blocks.cherry_planks) // Replace 'P' with cherry planks
+		    });
+		this.addRecipe(new ItemStack(Blocks.crafting_table), // Crafts the crafting table out of cherry planks
+		    new Object[] {
+		        "PP", // First row: P for cherry planks
+		        "PP", // Second row: P for cherry planks
+		        Character.valueOf('P'), // 'P' represents cherry planks in the recipe
+		        new ItemStack(Blocks.cherry_planks) // Replace 'P' with cherry planks
+		    });
+		this.addRecipe(new ItemStack(Items.stick, 4), // crafts 4 sticks from cherry planks
+		    new Object[] {
+		        "P", // First row: P for cherry planks
+		        "P", // Second row: P for cherry planks
+		        Character.valueOf('P'), // 'P' represents cherry planks in the recipe
+		        new ItemStack(Blocks.cherry_planks) // Replace 'P' with cherry planks
+		    });
+		this.addRecipe(new ItemStack(Items.wooden_shovel), // Cherry wood shovel
+			    new Object[] {
+			        "P", // Plank in the top row
+			        "S", // Stick in the middle row
+			        "S", // Stick in the bottom row
+			        Character.valueOf('P'), new ItemStack(Blocks.cherry_planks), // 'P' for cherry planks
+			        Character.valueOf('S'), Items.stick // 'S' for stick
+			    });
+		this.addRecipe(new ItemStack(Items.wooden_pickaxe), // Cherry wood pickaxe
+			    new Object[] {
+			        "PPP", // Planks in the top row
+			        " S ", // Stick in the middle row
+			        " S ", // Stick in the bottom row
+			        Character.valueOf('P'), new ItemStack(Blocks.cherry_planks), // 'P' for cherry planks
+			        Character.valueOf('S'), Items.stick // 'S' for stick
+			    });
+		this.addRecipe(new ItemStack(Items.wooden_axe), // Cherry wood axe
+			    new Object[] {
+			        "PP ", // Planks in the top left and middle left
+			        "PS ", // Plank and stick in the second row
+			        " S ", // Stick in the third row
+			        Character.valueOf('P'), new ItemStack(Blocks.cherry_planks), // 'P' for cherry planks
+			        Character.valueOf('S'), Items.stick // 'S' for stick
+			    });
+		this.addRecipe(new ItemStack(Items.wooden_sword), // Cherry wood sword
+			    new Object[] {
+			        "P", // Plank in the top row
+			        "P", // Plank in the middle row
+			        "S", // Stick in the bottom row
+			        Character.valueOf('P'), new ItemStack(Blocks.cherry_planks), // 'P' for cherry planks
+			        Character.valueOf('S'), Items.stick // 'S' for stick
+			    });
+		this.addRecipe(new ItemStack(Items.wooden_hoe), // Cherry wood hoe
+			    new Object[] {
+			        "PP ", // Planks in the top row
+			        " S ", // Stick in the middle row
+			        " S ", // Stick in the bottom row
+			        Character.valueOf('P'), new ItemStack(Blocks.cherry_planks), // 'P' for cherry planks
+			        Character.valueOf('S'), Items.stick // 'S' for stick
+			    });
+		this.addRecipe(new ItemStack(Blocks.cherry_fence, 3), //cherry fence recipe
+			    new Object[] { "W#W", "W#W", Character.valueOf('#'), Items.stick, Character.valueOf('W'), 
+			        new ItemStack(Blocks.cherry_planks) });
 		this.addRecipe(new ItemStack(Blocks.birch_fence, 3),
 				new Object[] { "W#W", "W#W", Character.valueOf('#'), Items.stick, Character.valueOf('W'),
 						new ItemStack(Blocks.planks, 1, BlockPlanks.EnumType.BIRCH.getMetadata()) });

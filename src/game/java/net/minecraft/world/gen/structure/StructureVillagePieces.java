@@ -1534,7 +1534,7 @@ public class StructureVillagePieces {
 
 		public boolean addComponentParts(World world, EaglercraftRandom var2,
 				StructureBoundingBox structureboundingbox) {
-			IBlockState iblockstate = this.func_175847_a(Blocks.gravel.getDefaultState());
+			IBlockState iblockstate = this.func_175847_a(Blocks.grass_path.getDefaultState());
 			IBlockState iblockstate1 = this.func_175847_a(Blocks.cobblestone.getDefaultState());
 
 			for (int i = this.boundingBox.minX; i <= this.boundingBox.maxX; ++i) {
@@ -1824,7 +1824,7 @@ public class StructureVillagePieces {
 							parIBlockState.getValue(BlockStairs.FACING));
 				}
 
-				if (parIBlockState.getBlock() == Blocks.gravel) {
+				if (parIBlockState.getBlock() == Blocks.grass_path) {
 					return Blocks.sandstone.getDefaultState();
 				}
 			}
@@ -1921,7 +1921,7 @@ public class StructureVillagePieces {
 			for (int i = 0; i <= 5; ++i) {
 				for (int j = 0; j <= 5; ++j) {
 					if (j == 0 || j == 5 || i == 0 || i == 5) {
-						this.setBlockState(world, Blocks.gravel.getDefaultState(), j, 11, i, structureboundingbox);
+						this.setBlockState(world, Blocks.grass_path.getDefaultState(), j, 11, i, structureboundingbox);
 						this.clearCurrentPositionBlocksUpwards(world, j, 12, i, structureboundingbox);
 					}
 				}

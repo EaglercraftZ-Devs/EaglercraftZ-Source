@@ -1547,6 +1547,169 @@ public class Block {
 		registerBlock(197, (String) "dark_oak_door", (new BlockDoor(Material.wood)).setHardness(3.0F)
 				.setStepSound(soundTypeWood).setUnlocalizedName("doorDarkOak").disableStats());
 		blockRegistry.validateKey();
+		//eaglerz
+		registerBlock(198, (String) "deepslate", (new BlockDeepslate()).setHardness(3.0F).setResistance(6.0F)
+				.setStepSound(soundTypePiston).setUnlocalizedName("deepslate"));
+		registerBlock(199, (String) "cobbled_deepslate", (new BlockCobbledDeepslate()).setHardness(3.5F).setResistance(6.0F)
+				.setStepSound(soundTypePiston).setUnlocalizedName("deepslateCobbled"));
+		registerBlock(200, (String) "deepslate_gold_ore", (new BlockOre()).setHardness(4.5F).setResistance(3.0F)
+				.setStepSound(soundTypePiston).setUnlocalizedName("oreGoldDeepslate"));
+		registerBlock(201, (String) "deepslate_iron_ore", (new BlockOre()).setHardness(4.5F).setResistance(3.0F)
+				.setStepSound(soundTypePiston).setUnlocalizedName("oreIronDeepslate"));
+		registerBlock(202, (String) "deepslate_copper_ore", (new BlockOre()).setHardness(4.5F).setResistance(3.0F)
+				.setStepSound(soundTypePiston).setUnlocalizedName("oreCopperDeepslate"));
+		registerBlock(203, (String) "deepslate_coal_ore", (new BlockOre()).setHardness(4.5F).setResistance(3.0F)
+				.setStepSound(soundTypePiston).setUnlocalizedName("oreCoalDeepslate"));
+		registerBlock(204, (String) "deepslate_lapis_ore", (new BlockOre()).setHardness(4.5F).setResistance(3.0F)
+				.setStepSound(soundTypePiston).setUnlocalizedName("oreLapisDeepslate"));
+		registerBlock(205, (String) "deepslate_diamond_ore", (new BlockOre()).setHardness(4.5F).setResistance(3.0F)
+				.setStepSound(soundTypePiston).setUnlocalizedName("oreDiamondDeepslate"));
+		registerBlock(206, (String) "deepslate_redstone_ore", (new BlockOre()).setHardness(4.5F).setResistance(3.0F)
+				.setStepSound(soundTypePiston).setUnlocalizedName("oreRedstoneDeepslate"));
+		registerBlock(207, (String) "deepslate_emerald_ore", (new BlockOre()).setHardness(4.5F).setResistance(3.0F)
+				.setStepSound(soundTypePiston).setUnlocalizedName("oreEmeraldDeepslate"));
+		registerBlock(208, (String) "copper_ore", (new BlockOre()).setHardness(3.0F).setResistance(3.0F)
+				.setStepSound(soundTypePiston).setUnlocalizedName("oreCopper"));
+		registerBlock(209, (String) "cherry_log", (new BlockCherryLog()).setHardness(2.0F).setResistance(2.0F)//use the class BlockCherryLog to add even more costume logs!
+				.setStepSound(soundTypeWood).setUnlocalizedName("logCherry"));
+		registerBlock(210, (String) "mangrove_log", (new BlockEasyLog()).setHardness(2.0F).setResistance(2.0F)//use the class BlockCherryLog to add even more costume logs!
+				.setStepSound(soundTypeWood).setUnlocalizedName("logMangrove")
+				.setCreativeTab(CreativeTabs.tabBlock));
+		registerBlock(211, (String) "crimson_log", (new BlockEasyLog()).setHardness(2.0F).setResistance(2.0F)//use the class BlockCherryLog to add even more costume logs!
+				.setStepSound(soundTypeWood).setUnlocalizedName("logCrimson")
+				.setCreativeTab(CreativeTabs.tabBlock));
+		registerBlock(212, (String) "warped_log", (new BlockEasyLog()).setHardness(2.0F).setResistance(2.0F)//use the class BlockCherryLog to add even more costume logs!
+				.setStepSound(soundTypeWood).setUnlocalizedName("logWarped")
+				.setCreativeTab(CreativeTabs.tabBlock));
+		registerBlock(213, (String) "cherry_leaves", (new BlockEasyLog()).setHardness(0.2F).setResistance(0.2F)
+				.setStepSound(soundTypeGrass).setUnlocalizedName("leavesCherry")
+				.setCreativeTab(CreativeTabs.tabDecorations));
+		registerBlock(214, (String) "cherry_planks", (new BlockEasyPlank()).setHardness(2.0F).setResistance(3.0F)//use the class BlockEasyPlank to add even more costume planks!
+				.setStepSound(soundTypeWood).setUnlocalizedName("planksCherry"));
+		registerBlock(215, (String) "cherry_trapdoor", (new BlockTrapDoor(Material.wood)).setHardness(3.0F)
+				.setStepSound(soundTypeWood).setUnlocalizedName("trapdoorCherry").disableStats());
+		registerBlock(216, (String) "cherry_fence", (new BlockFence(Material.wood)).setHardness(2.0F)
+				.setStepSound(soundTypeWood).setUnlocalizedName("fenceCherry"));
+		registerBlock(217, (String) "ancient_debris", (new BlockOre()).setHardness(30.0F).setResistance(1200.0F)
+				.setStepSound(soundTypePiston).setUnlocalizedName("debrisAncient"));
+		registerBlock(218, (String) "grass_path", (new BlockGrassPath()).setHardness(0.65F).setResistance(0.65F)
+				.setStepSound(soundTypeGravel).setUnlocalizedName("pathDirt")
+				.setCreativeTab(CreativeTabs.tabBlock));
+		registerBlock(219, (String) "netherite_block", 
+				(new Block(Material.iron, MapColor.ironColor)).setHardness(50.0F).setResistance(1200.0F)
+				.setStepSound(soundTypeMetal).setUnlocalizedName("blockNetherite")
+				.setCreativeTab(CreativeTabs.tabBlock));
+		registerBlock(220, (String) "stripped_oak_log", (new BlockStrippedLog()).setHardness(2.0F).setResistance(2.0F)
+				.setStepSound(soundTypeWood).setUnlocalizedName("logOakStripped")
+				.setCreativeTab(CreativeTabs.tabBlock));
+		registerBlock(221, (String) "stripped_spruce_log", (new BlockStrippedLog()).setHardness(2.0F).setResistance(2.0F)
+				.setStepSound(soundTypeWood).setUnlocalizedName("logSpruceStripped")
+				.setCreativeTab(CreativeTabs.tabBlock));
+		registerBlock(222, (String) "stripped_birch_log", (new BlockStrippedLog()).setHardness(2.0F).setResistance(2.0F)
+				.setStepSound(soundTypeWood).setUnlocalizedName("logBirchStripped")
+				.setCreativeTab(CreativeTabs.tabBlock));
+		registerBlock(223, (String) "stripped_jungle_log", (new BlockStrippedLog()).setHardness(2.0F).setResistance(2.0F)
+				.setStepSound(soundTypeWood).setUnlocalizedName("logJungleStripped")
+				.setCreativeTab(CreativeTabs.tabBlock));
+		registerBlock(224, (String) "stripped_acacia_log", (new BlockStrippedLog()).setHardness(2.0F).setResistance(2.0F)
+				.setStepSound(soundTypeWood).setUnlocalizedName("logAcaciaStripped")
+				.setCreativeTab(CreativeTabs.tabBlock));
+		registerBlock(225, (String) "stripped_dark_oak_log", (new BlockStrippedLog()).setHardness(2.0F).setResistance(2.0F)
+				.setStepSound(soundTypeWood).setUnlocalizedName("logOakDarkStripped")
+				.setCreativeTab(CreativeTabs.tabBlock));
+		registerBlock(226, (String) "stripped_mangrove_log", (new BlockStrippedLog()).setHardness(2.0F).setResistance(2.0F)
+				.setStepSound(soundTypeWood).setUnlocalizedName("logMangroveStripped")
+				.setCreativeTab(CreativeTabs.tabBlock));
+		registerBlock(227, (String) "stripped_cherry_log", (new BlockStrippedLog()).setHardness(2.0F).setResistance(2.0F)
+				.setStepSound(soundTypeWood).setUnlocalizedName("logCherryStripped")
+				.setCreativeTab(CreativeTabs.tabBlock));
+		registerBlock(228, (String) "stripped_crimson_log", (new BlockStrippedLog()).setHardness(2.0F).setResistance(2.0F)
+				.setStepSound(soundTypeWood).setUnlocalizedName("logCrimsonStripped")
+				.setCreativeTab(CreativeTabs.tabBlock));
+		registerBlock(229, (String) "stripped_warped_log", (new BlockStrippedLog()).setHardness(2.0F).setResistance(2.0F)
+				.setStepSound(soundTypeWood).setUnlocalizedName("logWarpedStripped")
+				.setCreativeTab(CreativeTabs.tabBlock));
+		registerBlock(230, (String) "smithing_table", (new BlockSmithing()).setHardness(2.5F).setResistance(12.5F)
+				.setStepSound(soundTypeWood).setUnlocalizedName("tableSmithing")
+				.setCreativeTab(CreativeTabs.tabDecorations));
+		registerBlock(231, (String) "end_rod", (new BlockEndRod()).setHardness(0.0F).setResistance(0.0F)
+				.setStepSound(soundTypeWood).setUnlocalizedName("rodEnd")
+				.setCreativeTab(CreativeTabs.tabDecorations));
+		registerBlock(232, (String) "slime_block", (new BlockEasyLog()).setHardness(0.0F).setResistance(0.0F)
+				.setStepSound(soundTypeWood).setUnlocalizedName("blockSlime")
+				.setCreativeTab(CreativeTabs.tabDecorations));
+		registerBlock(233, (String) "honey_block", (new BlockSlime()).setHardness(0.0F).setResistance(0.0F)
+				.setStepSound(soundTypeWood).setUnlocalizedName("blockHoney")
+				.setCreativeTab(CreativeTabs.tabDecorations));
+		registerBlock(234, (String) "bee_nest", (new Block(Material.wood)).setHardness(0.3F).setResistance(0.3F)
+				.setStepSound(soundTypeWood).setUnlocalizedName("nestBee")
+				.setCreativeTab(CreativeTabs.tabDecorations));
+		registerBlock(235, (String) "beehive", (new Block(Material.wood)).setHardness(0.3F).setResistance(0.3F)
+				.setStepSound(soundTypeWood).setUnlocalizedName("hiveBee")
+				.setCreativeTab(CreativeTabs.tabDecorations));
+		registerBlock(236, (String) "white_concrete", (new Block(Material.clay)).setHardness(1.8F).setResistance(1.8F)
+				.setStepSound(soundTypeStone).setUnlocalizedName("concreteWhite")
+				.setCreativeTab(CreativeTabs.tabBlock));
+		registerBlock(237, (String) "orange_concrete", (new Block(Material.clay)).setHardness(1.8F).setResistance(1.8F)
+				.setStepSound(soundTypeStone).setUnlocalizedName("concreteOrange")
+				.setCreativeTab(CreativeTabs.tabBlock));
+		registerBlock(238, (String) "magenta_concrete", (new Block(Material.clay)).setHardness(1.8F).setResistance(1.8F)
+				.setStepSound(soundTypeStone).setUnlocalizedName("concreteMagenta")
+				.setCreativeTab(CreativeTabs.tabBlock));
+		registerBlock(239, (String) "cyan_concrete", (new Block(Material.clay)).setHardness(1.8F).setResistance(1.8F)
+				.setStepSound(soundTypeStone).setUnlocalizedName("concreteCyan")
+				.setCreativeTab(CreativeTabs.tabBlock));
+		registerBlock(240, (String) "yellow_concrete", (new Block(Material.clay)).setHardness(1.8F).setResistance(1.8F)
+				.setStepSound(soundTypeStone).setUnlocalizedName("concreteYellow")
+				.setCreativeTab(CreativeTabs.tabBlock));
+		registerBlock(241, (String) "lime_concrete", (new Block(Material.clay)).setHardness(1.8F).setResistance(1.8F)
+				.setStepSound(soundTypeStone).setUnlocalizedName("concreteLime")
+				.setCreativeTab(CreativeTabs.tabBlock));
+		registerBlock(242, (String) "pink_concrete", (new Block(Material.clay)).setHardness(1.8F).setResistance(1.8F)
+				.setStepSound(soundTypeStone).setUnlocalizedName("concretePink")
+				.setCreativeTab(CreativeTabs.tabBlock));
+		registerBlock(243, (String) "gray_concrete", (new Block(Material.clay)).setHardness(1.8F).setResistance(1.8F)
+				.setStepSound(soundTypeStone).setUnlocalizedName("concreteGray")
+				.setCreativeTab(CreativeTabs.tabBlock));
+		registerBlock(244, (String) "light_gray_concrete", (new Block(Material.clay)).setHardness(1.8F).setResistance(1.8F)
+				.setStepSound(soundTypeStone).setUnlocalizedName("concreteGrayLight")
+				.setCreativeTab(CreativeTabs.tabBlock));
+		registerBlock(245, (String) "light_blue_concrete", (new Block(Material.clay)).setHardness(1.8F).setResistance(1.8F)
+				.setStepSound(soundTypeStone).setUnlocalizedName("concreteBlueLight")
+				.setCreativeTab(CreativeTabs.tabBlock));
+		registerBlock(246, (String) "purple_concrete", (new Block(Material.clay)).setHardness(1.8F).setResistance(1.8F)
+				.setStepSound(soundTypeStone).setUnlocalizedName("concretePurple")
+				.setCreativeTab(CreativeTabs.tabBlock));
+		registerBlock(247, (String) "blue_concrete", (new Block(Material.clay)).setHardness(1.8F).setResistance(1.8F)
+				.setStepSound(soundTypeStone).setUnlocalizedName("concreteBlue")
+				.setCreativeTab(CreativeTabs.tabBlock));
+		registerBlock(248, (String) "brown_concrete", (new Block(Material.clay)).setHardness(1.8F).setResistance(1.8F)
+				.setStepSound(soundTypeStone).setUnlocalizedName("concreteBrown")
+				.setCreativeTab(CreativeTabs.tabBlock));
+		registerBlock(249, (String) "green_concrete", (new Block(Material.clay)).setHardness(1.8F).setResistance(1.8F)
+				.setStepSound(soundTypeStone).setUnlocalizedName("concreteGreen")
+				.setCreativeTab(CreativeTabs.tabBlock));
+		registerBlock(250, (String) "red_concrete", (new Block(Material.clay)).setHardness(1.8F).setResistance(1.8F)
+				.setStepSound(soundTypeStone).setUnlocalizedName("concreteRed")
+				.setCreativeTab(CreativeTabs.tabBlock));
+		registerBlock(252, (String) "black_concrete", (new Block(Material.clay)).setHardness(1.8F).setResistance(1.8F)
+				.setStepSound(soundTypeStone).setUnlocalizedName("concreteBlack")
+				.setCreativeTab(CreativeTabs.tabBlock));
+		registerBlock(253, (String) "purpur_block", (new Block(Material.rock)).setHardness(1.5F).setResistance(6.0F)
+				.setStepSound(soundTypeStone).setCreativeTab(CreativeTabs.tabBlock).setUnlocalizedName("blockPurpur"));
+		registerBlock(254, (String) "purpur_pillar", (new Block(Material.rock)).setHardness(1.5F).setResistance(6.0F)
+				.setStepSound(soundTypeStone).setCreativeTab(CreativeTabs.tabBlock).setUnlocalizedName("pillarPurpur"));
+		//registerBlock(246, "purpur_stairs", (new BlockStairs(blockPurpur.getDefaultState()))
+				//.setUnlocalizedName("stairsPurpur"));
+		//registerBlock(247, "purpur_double_slab",
+				//(BlockSlab) (new BlockPurpurSlab.Double()).setHardness(2.0F).setResistance(10.0F)
+						//.setStepSound(soundTypeStone).setUnlocalizedName("purpurSlab"),
+				//205, "purpur_slab",
+				//(BlockSlab) (new BlockPurpurSlab.Half()).setHardness(2.0F).setResistance(10.0F)
+						//.setStepSound(soundTypeStone).setUnlocalizedName("purpurSlab"),
+				//"purpur_slab");
+		//registerBlock(205, (String) "cherry_door", (new BlockDoor(Material.wood)).setHardness(2.0F) //fail
+				//.setStepSound(soundTypeWood).setUnlocalizedName("doorCherry")); //fail
 
 		for (Block block13 : blockRegistry) {
 			if (block13.blockMaterial == Material.air) {

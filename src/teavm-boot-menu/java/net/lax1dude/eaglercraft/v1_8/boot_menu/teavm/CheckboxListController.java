@@ -1,4 +1,15 @@
-/*
+package net.lax1dude.eaglercraft.v1_8.boot_menu.teavm;
+
+import java.util.Arrays;
+import java.util.List;
+
+import org.teavm.jso.dom.html.HTMLElement;
+
+import com.google.common.collect.Collections2;
+import com.google.common.collect.Iterators;
+import com.google.common.collect.Lists;
+
+/**
  * Copyright (c) 2024 lax1dude. All Rights Reserved.
  * 
  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
@@ -13,17 +24,6 @@
  * POSSIBILITY OF SUCH DAMAGE.
  * 
  */
-
-package net.lax1dude.eaglercraft.v1_8.boot_menu.teavm;
-
-import java.util.Arrays;
-import java.util.List;
-
-import org.teavm.jso.dom.html.HTMLElement;
-
-import com.google.common.collect.Iterators;
-import com.google.common.collect.Lists;
-
 public abstract class CheckboxListController<T extends SelectionListController.ListItem>
 		extends SelectionListController<SelectionListController.ListItem> {
 
@@ -67,8 +67,9 @@ public abstract class CheckboxListController<T extends SelectionListController.L
 	}
 
 	public List<T> getSelectedItems() {
-		return selectionEnableList.stream().filter((e) -> (e.userVal && !e.listItem.getAlwaysSelected()))
-				.map((e) -> (T) ((ListItemWrapper) e.listItem).parent).toList();
+		return Lists.newArrayList(Collections2.transform(
+				Collections2.filter(selectionEnableList, (e) -> (e.userVal && !e.listItem.getAlwaysSelected())),
+				(e) -> (T) ((ListItemWrapper) e.listItem).parent));
 	}
 
 	protected void itemSelectedLow(ListItemInstance<SelectionListController.ListItem> item) {

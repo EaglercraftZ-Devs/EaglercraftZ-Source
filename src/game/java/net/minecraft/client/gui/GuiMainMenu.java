@@ -290,6 +290,10 @@ public class GuiMainMenu extends GuiScreen implements GuiYesNoCallback {
 				I18n.format("menu.options", new Object[0])));
 		this.buttonList.add(new GuiButton(4, this.width / 2 + 2, i + 72 + 12, 98, 20,
 				I18n.format("menu.editProfile", new Object[0])));
+		//eaglerz
+		this.buttonList.add(new GuiButton(6, this.width / 2 - 100, i + 37 + 11, 200, 20,
+                I18n.format("menu.realms", new Object[0])));
+		this.buttonList.add(new GuiButtonLanguage(7, this.width / 2 + 105, i + 72 + 12));
 
 		this.buttonList.add(new GuiButtonLanguage(5, this.width / 2 - 124, i + 72 + 12));
 
@@ -356,6 +360,14 @@ public class GuiMainMenu extends GuiScreen implements GuiYesNoCallback {
 
 		if (parGuiButton.id == 5) {
 			this.mc.displayGuiScreen(new GuiLanguage(this, this.mc.gameSettings, this.mc.getLanguageManager()));
+		}
+
+		if (parGuiButton.id == 6) { //eaglerz
+		    this.mc.displayGuiScreen(new GuiRealms());
+		}
+
+		if (parGuiButton.id == 7) { //eaglerz
+		    this.mc.displayGuiScreen(new GuiAccessibility(this, this.mc.gameSettings));
 		}
 
 		if (parGuiButton.id == 1) {
@@ -740,7 +752,24 @@ public class GuiMainMenu extends GuiScreen implements GuiYesNoCallback {
 
 		this.updateCheckerOverlay.drawScreen(i, j, f);
 		super.drawScreen(i, j, f);
-	}
+		//test2 kinda works edit:FINALLY WORKS
+						ResourceLocation image = new ResourceLocation("minecraft", "textures/gui/title/edition.png");
+					Minecraft.getMinecraft().getTextureManager().bindTexture(image);
+
+						// Coordinates where you want to draw the image
+						int imageWidth = 128;
+						//old: 128
+						int imageHeight = 16;
+						//old: 16
+
+						// Image width and height
+						int x = (int) ((this.width - imageWidth) / 2);
+	   					int y = (int) ((this.height - imageHeight) / 4.4);
+						//old: 3.2
+
+						// Draw the texture (image)
+					this.drawModalRectWithCustomSizedTexture(x, y, 0, 0, imageWidth, imageHeight, imageWidth, imageHeight);
+					}
 
 	/**+
 	 * Called when the mouse is clicked. Args : mouseX, mouseY,

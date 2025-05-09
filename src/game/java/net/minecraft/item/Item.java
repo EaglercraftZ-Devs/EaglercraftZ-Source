@@ -577,6 +577,63 @@ public class Item {
 		registerItemBlock(Blocks.red_mushroom);
 		registerItemBlock(Blocks.gold_block);
 		registerItemBlock(Blocks.iron_block);
+		//eaglerz
+		registerItemBlock(Blocks.deepslate);
+		registerItemBlock(Blocks.deepslate_gold_ore);
+		registerItemBlock(Blocks.deepslate_iron_ore);
+		registerItemBlock(Blocks.deepslate_copper_ore);
+		registerItemBlock(Blocks.deepslate_coal_ore);
+		registerItemBlock(Blocks.deepslate_lapis_ore);
+		registerItemBlock(Blocks.deepslate_diamond_ore);
+		registerItemBlock(Blocks.deepslate_redstone_ore);
+		registerItemBlock(Blocks.deepslate_emerald_ore);
+		registerItemBlock(Blocks.copper_ore);
+		registerItemBlock(Blocks.cobbled_deepslate);
+		registerItemBlock(Blocks.cherry_log);
+		registerItemBlock(Blocks.mangrove_log);
+		registerItemBlock(Blocks.crimson_log);
+		registerItemBlock(Blocks.warped_log);
+		registerItemBlock(Blocks.cherry_leaves);
+		registerItemBlock(Blocks.cherry_planks);
+		registerItemBlock(Blocks.cherry_trapdoor);
+		registerItemBlock(Blocks.cherry_fence);
+		registerItemBlock(Blocks.ancient_debris);
+		registerItemBlock(Blocks.grass_path);
+		registerItemBlock(Blocks.netherite_block);
+		registerItemBlock(Blocks.stripped_oak_log);
+		registerItemBlock(Blocks.stripped_spruce_log);
+		registerItemBlock(Blocks.stripped_birch_log);
+		registerItemBlock(Blocks.stripped_jungle_log);
+		registerItemBlock(Blocks.stripped_acacia_log);
+		registerItemBlock(Blocks.stripped_dark_oak_log);
+		registerItemBlock(Blocks.stripped_mangrove_log);
+		registerItemBlock(Blocks.stripped_cherry_log);
+		registerItemBlock(Blocks.stripped_crimson_log);
+		registerItemBlock(Blocks.stripped_warped_log);
+		registerItemBlock(Blocks.smithing_table);
+		registerItemBlock(Blocks.end_rod);
+		registerItemBlock(Blocks.honey_block);
+		registerItemBlock(Blocks.bee_nest);
+		registerItemBlock(Blocks.beehive);
+		registerItemBlock(Blocks.white_concrete);
+		registerItemBlock(Blocks.orange_concrete);
+		registerItemBlock(Blocks.magenta_concrete);
+		registerItemBlock(Blocks.cyan_concrete);
+		registerItemBlock(Blocks.yellow_concrete);
+		registerItemBlock(Blocks.lime_concrete);
+		registerItemBlock(Blocks.pink_concrete);
+		registerItemBlock(Blocks.gray_concrete);
+		registerItemBlock(Blocks.light_gray_concrete);
+		registerItemBlock(Blocks.light_blue_concrete);
+		registerItemBlock(Blocks.purple_concrete);
+		registerItemBlock(Blocks.blue_concrete);
+		registerItemBlock(Blocks.brown_concrete);
+		registerItemBlock(Blocks.green_concrete);
+		registerItemBlock(Blocks.red_concrete);
+		registerItemBlock(Blocks.black_concrete);
+		registerItemBlock(Blocks.purpur_block);
+		registerItemBlock(Blocks.purpur_pillar);
+		//registerItemBlock(Blocks.cherry_door); //fail
 		registerItemBlock(Blocks.stone_slab,
 				(new ItemSlab(Blocks.stone_slab, Blocks.stone_slab, Blocks.double_stone_slab))
 						.setUnlocalizedName("stoneSlab"));
@@ -1041,6 +1098,66 @@ public class Item {
 		registerItem(2265, (String) "record_ward", (new ItemRecord("ward")).setUnlocalizedName("record"));
 		registerItem(2266, (String) "record_11", (new ItemRecord("11")).setUnlocalizedName("record"));
 		registerItem(2267, (String) "record_wait", (new ItemRecord("wait")).setUnlocalizedName("record"));
+		//eaglerz stuff
+		registerItem(2268, (String) "copper_ingot",
+				(new Item()).setUnlocalizedName("ingotCopper").setCreativeTab(CreativeTabs.tabMaterials));
+		registerItem(2269, (String) "raw_copper",
+				(new Item()).setUnlocalizedName("copperRaw").setCreativeTab(CreativeTabs.tabMaterials));
+		registerItem(2270, (String) "raw_iron",
+				(new Item()).setUnlocalizedName("ironRaw").setCreativeTab(CreativeTabs.tabMaterials));
+		registerItem(2271, (String) "raw_gold",
+				(new Item()).setUnlocalizedName("goldRaw").setCreativeTab(CreativeTabs.tabMaterials));
+		registerItem(2272, (String) "glow_ink_sac",
+				(new Item()).setUnlocalizedName("sacInkGlow").setCreativeTab(CreativeTabs.tabMaterials));
+		registerItem(2273, (String) "shield",
+				(new ItemShield()).setUnlocalizedName("shieldCombat"));
+		registerItem(2274, (String) "netherite_helmet",
+				(new ItemArmor(ItemArmor.ArmorMaterial.NETHERITE, 3, 0)).setUnlocalizedName("helmetNetherite"));
+		registerItem(2275, (String) "netherite_chestplate",
+				(new ItemArmor(ItemArmor.ArmorMaterial.NETHERITE, 3, 1)).setUnlocalizedName("chestplateNetherite"));
+		registerItem(2276, (String) "netherite_leggings",
+				(new ItemArmor(ItemArmor.ArmorMaterial.NETHERITE, 3, 2)).setUnlocalizedName("leggingsNetherite"));
+		registerItem(2277, (String) "netherite_boots",
+				(new ItemArmor(ItemArmor.ArmorMaterial.NETHERITE, 3, 3)).setUnlocalizedName("bootsNetherite"));
+		registerItem(2278, (String) "netherite_sword",
+				(new ItemSword(Item.ToolMaterial.NETHERITE)).setUnlocalizedName("swordNetherite"));
+		registerItem(2279, (String) "netherite_shovel",
+				(new ItemSpade(Item.ToolMaterial.NETHERITE)).setUnlocalizedName("shovelNetherite"));
+		registerItem(2280, (String) "netherite_pickaxe",
+				(new ItemPickaxe(Item.ToolMaterial.NETHERITE)).setUnlocalizedName("pickaxeNetherite"));
+		registerItem(2281, (String) "netherite_axe",
+				(new ItemAxe(Item.ToolMaterial.NETHERITE)).setUnlocalizedName("hatchetNetherite"));
+		registerItem(2282, (String) "netherite_hoe",
+				(new ItemHoe(Item.ToolMaterial.NETHERITE)).setUnlocalizedName("hoeNetherite"));
+		registerItem(2283, (String) "netherite_ingot",
+				(new Item()).setUnlocalizedName("ingotNetherite").setCreativeTab(CreativeTabs.tabMaterials));
+		registerItem(2284, (String) "elytra",
+				(new ItemElytra()).setUnlocalizedName("elytra").setCreativeTab(CreativeTabs.tabTransport));
+		registerItem(2285, (String) "turtle_helmet",
+				(new ItemArmor(ItemArmor.ArmorMaterial.TURTLE, 4,0)).setUnlocalizedName("helmetTurtle"));
+		registerItem(2286, (String) "totem_of_undying",
+				(new ItemTotemOfUndying()).setUnlocalizedName("totemOfUndying").setCreativeTab(CreativeTabs.tabCombat));
+		registerItem(2287, (String) "crossbow",
+				(new ItemCrossbow()).setUnlocalizedName("crossbow").setCreativeTab(CreativeTabs.tabCombat));
+		registerItem(2288, (String) "end_crystal",
+				(new ItemEndCrystal()).setUnlocalizedName("crystalEnd").setCreativeTab(CreativeTabs.tabCombat));
+		registerItem(2289, (String) "netherite_scrap",
+				(new Item()).setUnlocalizedName("scrapNetherite").setCreativeTab(CreativeTabs.tabMaterials));
+		registerItem(2290, (String) "scute",
+				(new Item()).setUnlocalizedName("scute").setCreativeTab(CreativeTabs.tabMaterials));
+		registerItem(2291, (String) "trident",
+				(new ItemTrident()).setUnlocalizedName("trident"));
+		registerItem(2292, (String) "spruce_boat", (new ItemBoat()).setUnlocalizedName("boatSpruce"));
+		registerItem(2293, (String) "birch_boat", (new ItemBoat()).setUnlocalizedName("boatBirch"));
+		registerItem(2294, (String) "jungle_boat", (new ItemBoat()).setUnlocalizedName("boatJungle"));
+		registerItem(2295, (String) "acacia_boat", (new ItemBoat()).setUnlocalizedName("boatAcacia"));
+		registerItem(2296, (String) "dark_oak_boat", (new ItemBoat()).setUnlocalizedName("boatOakDark"));
+		registerItem(2297, (String) "mangrove_boat", (new ItemBoat()).setUnlocalizedName("boatMangrove"));
+		registerItem(2298, (String) "cherry_boat", (new ItemBoat()).setUnlocalizedName("cherry_boat"));
+		registerItem(2299, (String) "marshy_choco", (new ItemAppleGold(4, 1.2F, false)).setAlwaysEdible()
+				.setPotionEffect(Potion.regeneration.id, 5, 1, 1.0F).setUnlocalizedName("§bchocoMarshy"));
+		//registerItem(2272, (String) "cherry_door", //fail
+				//(new Item()).setUnlocalizedName("doorCherry").setCreativeTab(CreativeTabs.tabRedstone)); //fail
 	}
 
 	/**+
@@ -1069,7 +1186,7 @@ public class Item {
 
 	public static enum ToolMaterial {
 		WOOD(0, 59, 2.0F, 0.0F, 15), STONE(1, 131, 4.0F, 1.0F, 5), IRON(2, 250, 6.0F, 2.0F, 14),
-		EMERALD(3, 1561, 8.0F, 3.0F, 10), GOLD(0, 32, 12.0F, 0.0F, 22);
+		EMERALD(3, 1561, 8.0F, 3.0F, 10), GOLD(0, 32, 12.0F, 0.0F, 22), NETHERITE(3, 2031, 9.0F, 4.0F, 15);
 
 		private final int harvestLevel;
 		private final int maxUses;

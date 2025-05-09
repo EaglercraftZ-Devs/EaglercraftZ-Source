@@ -1,4 +1,14 @@
-/*
+package net.lax1dude.eaglercraft.v1_8.boot_menu.teavm;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.teavm.jso.dom.html.HTMLElement;
+
+import com.google.common.collect.Collections2;
+import com.google.common.collect.Lists;
+
+/**
  * Copyright (c) 2024 lax1dude. All Rights Reserved.
  * 
  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
@@ -13,13 +23,6 @@
  * POSSIBILITY OF SUCH DAMAGE.
  * 
  */
-
-package net.lax1dude.eaglercraft.v1_8.boot_menu.teavm;
-
-import java.util.List;
-
-import org.teavm.jso.dom.html.HTMLElement;
-
 public abstract class MenuStateClientMultiSelect extends MenuState {
 
 	protected static class BootItem implements SelectionListController.ListItem {
@@ -50,7 +53,7 @@ public abstract class MenuStateClientMultiSelect extends MenuState {
 
 	public MenuStateClientMultiSelect(MenuState parentState, List<BootableClientEntry> bootableClients) {
 		this.parentState = parentState;
-		List<BootItem> list = bootableClients.stream().map(BootItem::new).toList();
+		List<BootItem> list = new ArrayList<>(Collections2.transform(bootableClients, BootItem::new));
 		selectionController = new CheckboxListController<BootItem>(BootMenuMain.bootMenuDOM.content_selection, list) {
 
 			@Override
@@ -60,7 +63,7 @@ public abstract class MenuStateClientMultiSelect extends MenuState {
 
 			@Override
 			protected void doneSelected(List<BootItem> selectedItems) {
-				MenuStateClientMultiSelect.this.onDone(selectedItems.stream().map((itm) -> itm.bootableClient).toList());
+				MenuStateClientMultiSelect.this.onDone(Lists.newArrayList(Collections2.transform(selectedItems, (itm) -> itm.bootableClient)));
 			}
 
 		};

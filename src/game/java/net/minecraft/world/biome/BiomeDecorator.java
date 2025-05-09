@@ -72,6 +72,7 @@ public class BiomeDecorator {
 	protected WorldGenerator redstoneGen;
 	protected WorldGenerator diamondGen;
 	protected WorldGenerator lapisGen;
+	protected WorldGenerator copperGen;
 	protected WorldGenFlowers yellowFlowerGen = new WorldGenFlowers(Blocks.yellow_flower,
 			BlockFlower.EnumFlowerType.DANDELION);
 	/**+
@@ -171,6 +172,7 @@ public class BiomeDecorator {
 					this.chunkProviderSettings.diamondSize);
 			this.lapisGen = new WorldGenMinable(Blocks.lapis_ore.getDefaultState(),
 					this.chunkProviderSettings.lapisSize);
+			this.copperGen = new WorldGenMinable(Blocks.copper_ore.getDefaultState(), this.chunkProviderSettings.coalSize);
 			this.genDecorations(parBiomeGenBase);
 			this.currentWorld = null;
 			this.randomGenerator = null;
@@ -454,5 +456,7 @@ public class BiomeDecorator {
 				this.chunkProviderSettings.diamondMinHeight, this.chunkProviderSettings.diamondMaxHeight);
 		this.genStandardOre2(this.chunkProviderSettings.lapisCount, this.lapisGen,
 				this.chunkProviderSettings.lapisCenterHeight, this.chunkProviderSettings.lapisSpread);
+		this.genStandardOre1(this.chunkProviderSettings.copperCount,this.copperGen,
+				this.chunkProviderSettings.coalMinHeight, this.chunkProviderSettings.coalMaxHeight);
 	}
 }

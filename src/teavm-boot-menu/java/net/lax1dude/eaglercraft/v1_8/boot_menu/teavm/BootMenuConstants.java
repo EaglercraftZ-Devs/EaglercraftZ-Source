@@ -1,4 +1,10 @@
-/*
+package net.lax1dude.eaglercraft.v1_8.boot_menu.teavm;
+
+import net.lax1dude.eaglercraft.v1_8.EagRuntime;
+import net.lax1dude.eaglercraft.v1_8.EaglercraftUUID;
+import net.lax1dude.eaglercraft.v1_8.EaglercraftVersion;
+
+/**
  * Copyright (c) 2024 lax1dude. All Rights Reserved.
  * 
  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
@@ -13,13 +19,6 @@
  * POSSIBILITY OF SUCH DAMAGE.
  * 
  */
-
-package net.lax1dude.eaglercraft.v1_8.boot_menu.teavm;
-
-import net.lax1dude.eaglercraft.v1_8.EagRuntime;
-import net.lax1dude.eaglercraft.v1_8.EaglercraftUUID;
-import net.lax1dude.eaglercraft.v1_8.EaglercraftVersion;
-
 public class BootMenuConstants {
 
 	public static final EaglercraftUUID UUID_ORIGIN_UNSIGNED_CLASSES_JS = new EaglercraftUUID(0x738248F88FF1446EL, 0xA834D40120DD8EB5L);

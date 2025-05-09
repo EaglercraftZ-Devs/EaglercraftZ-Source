@@ -15,7 +15,7 @@ import net.minecraft.item.crafting.CraftingManager;
  * Minecraft 1.8.8 bytecode is (c) 2015 Mojang AB. "Do not distribute!"
  * Mod Coder Pack v9.18 deobfuscation configs are (c) Copyright by the MCP Team
  * 
- * EaglercraftX 1.8 patch files (c) 2022-2025 lax1dude, ayunami2000. All Rights Reserved.
+ * EaglercraftX 1.8 patch files (c) 2022-2024 lax1dude, ayunami2000. All Rights Reserved.
  * 
  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
  * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
@@ -42,11 +42,13 @@ public class ContainerPlayer extends Container {
 		this.isLocalWorld = localWorld;
 		this.thePlayer = player;
 		this.addSlotToContainer(
-				new SlotCrafting(playerInventory.player, this.craftMatrix, this.craftResult, 0, 144, 36));
+				new SlotCrafting(playerInventory.player, this.craftMatrix, this.craftResult, 0, 154, 28));
+		        //new SlotCrafting(playerInventory.player, this.craftMatrix, this.craftResult, 0, 144, 36));
 
 		for (int i = 0; i < 2; ++i) {
 			for (int j = 0; j < 2; ++j) {
-				this.addSlotToContainer(new Slot(this.craftMatrix, j + i * 2, 88 + j * 18, 26 + i * 18));
+				this.addSlotToContainer(new Slot(this.craftMatrix, j + i * 2, 98 + j * 18, 18 + i * 18));
+				//this.addSlotToContainer(new Slot(this.craftMatrix, j + i * 2, 88 + j * 18, 26 + i * 18));
 			}
 		}
 

@@ -58,8 +58,15 @@ public class FurnaceRecipes {
 
 	private FurnaceRecipes() {
 		this.addSmeltingRecipeForBlock(Blocks.iron_ore, new ItemStack(Items.iron_ingot), 0.7F);
+		//eaglerz
+		this.addSmeltingRecipeForBlock(Blocks.copper_ore, new ItemStack(Items.copper_ingot), 0.7F);
+		this.addSmelting(Items.raw_copper, new ItemStack(Items.copper_ingot), 0.35F);
+		this.addSmelting(Items.raw_iron, new ItemStack(Items.iron_ingot), 0.35F);
+		this.addSmelting(Items.raw_gold, new ItemStack(Items.gold_ingot), 0.35F);
+		this.addSmeltingRecipeForBlock(Blocks.cobbled_deepslate, new ItemStack(Blocks.deepslate), 0.35F);
 		this.addSmeltingRecipeForBlock(Blocks.gold_ore, new ItemStack(Items.gold_ingot), 1.0F);
 		this.addSmeltingRecipeForBlock(Blocks.diamond_ore, new ItemStack(Items.diamond), 1.0F);
+		this.addSmeltingRecipeForBlock(Blocks.ancient_debris, new ItemStack(Items.netherite_scrap), 1.0F);
 		this.addSmeltingRecipeForBlock(Blocks.sand, new ItemStack(Blocks.glass), 0.1F);
 		this.addSmelting(Items.porkchop, new ItemStack(Items.cooked_porkchop), 0.35F);
 		this.addSmelting(Items.beef, new ItemStack(Items.cooked_beef), 0.35F);

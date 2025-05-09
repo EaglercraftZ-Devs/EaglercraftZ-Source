@@ -253,6 +253,64 @@ public class Blocks {
 	public static Block red_sandstone_stairs;
 	public static BlockSlab double_stone_slab2;
 	public static BlockSlab stone_slab2;
+	//eaglerz
+	public static Block deepslate;
+	public static Block deepslate_gold_ore;
+	public static Block deepslate_iron_ore;
+	public static Block deepslate_copper_ore;
+	public static Block deepslate_coal_ore;
+	public static Block deepslate_lapis_ore;
+	public static Block deepslate_diamond_ore;
+	public static Block deepslate_redstone_ore;
+	public static Block deepslate_emerald_ore;
+	public static Block copper_ore;
+	public static Block cobbled_deepslate;
+	public static Block cherry_log;
+	public static Block mangrove_log;
+	public static Block crimson_log;
+	public static Block warped_log;
+	public static Block cherry_leaves;
+	public static Block cherry_planks;
+	public static Block cherry_trapdoor;
+	public static Block cherry_fence;
+	public static Block ancient_debris;
+	public static Block grass_path;
+	public static Block netherite_block;
+	public static Block stripped_oak_log;
+	public static Block stripped_spruce_log;
+	public static Block stripped_birch_log;
+	public static Block stripped_jungle_log;
+	public static Block stripped_acacia_log;
+	public static Block stripped_dark_oak_log;
+	public static Block stripped_mangrove_log;
+	public static Block stripped_cherry_log;
+	public static Block stripped_crimson_log;
+	public static Block stripped_warped_log;
+	public static Block smithing_table;
+	public static Block end_rod;
+	//public static Block slime_block;
+	public static Block honey_block;
+	public static Block bee_nest;
+	public static Block beehive;
+	public static Block white_concrete;
+	public static Block orange_concrete;
+	public static Block magenta_concrete;
+	public static Block cyan_concrete;
+	public static Block yellow_concrete;
+	public static Block lime_concrete;
+	public static Block pink_concrete;
+	public static Block gray_concrete;
+	public static Block light_gray_concrete;
+	public static Block light_blue_concrete;
+	public static Block purple_concrete;
+	public static Block blue_concrete;
+	public static Block brown_concrete;
+	public static Block green_concrete;
+	public static Block red_concrete;
+	public static Block black_concrete;
+	public static Block purpur_block;
+	public static Block purpur_pillar;
+	//public static Block cherry_door; //fail
 
 	/**+
 	 * Returns the Block in the blockRegistry with the specified
@@ -464,6 +522,64 @@ public class Blocks {
 			red_sandstone_stairs = getRegisteredBlock("red_sandstone_stairs");
 			double_stone_slab2 = (BlockSlab) getRegisteredBlock("double_stone_slab2");
 			stone_slab2 = (BlockSlab) getRegisteredBlock("stone_slab2");
+			//eaglerz
+			deepslate = getRegisteredBlock("deepslate");
+			deepslate_gold_ore = getRegisteredBlock("deepslate_gold_ore");
+			deepslate_iron_ore = getRegisteredBlock("deepslate_iron_ore");
+			deepslate_copper_ore = getRegisteredBlock("deepslate_copper_ore");
+			deepslate_coal_ore = getRegisteredBlock("deepslate_coal_ore");
+			deepslate_lapis_ore = getRegisteredBlock("deepslate_lapis_ore");
+			deepslate_diamond_ore = getRegisteredBlock("deepslate_diamond_ore");
+			deepslate_redstone_ore = getRegisteredBlock("deepslate_redstone_ore");
+			deepslate_emerald_ore = getRegisteredBlock("deepslate_emerald_ore");
+			copper_ore = getRegisteredBlock("copper_ore");
+			cobbled_deepslate = getRegisteredBlock("cobbled_deepslate");
+			cherry_log = getRegisteredBlock("cherry_log");//very awesome!
+			mangrove_log = getRegisteredBlock("mangrove_block");//very awesome!
+			crimson_log = getRegisteredBlock("crimson_log");//ooooo nether!
+			warped_log = getRegisteredBlock("warped_log");//even better than the one above!
+			cherry_leaves = getRegisteredBlock("cherry_leaves");//even better!!
+			cherry_planks = getRegisteredBlock("cherry_planks");
+			cherry_trapdoor = getRegisteredBlock("cherry_trapdoor");
+			cherry_fence = getRegisteredBlock("cherry_fence");
+			ancient_debris = getRegisteredBlock("ancient_debris");
+			grass_path = getRegisteredBlock("grass_path");
+			netherite_block = getRegisteredBlock("netherite_block");
+			stripped_oak_log = getRegisteredBlock("stripped_oak_log");
+			stripped_spruce_log = getRegisteredBlock("stripped_spruce_log");
+			stripped_birch_log = getRegisteredBlock("stripped_birch_log");
+			stripped_jungle_log = getRegisteredBlock("stripped_jungle_log");
+			stripped_acacia_log = getRegisteredBlock("stripped_acacia_log");
+			stripped_dark_oak_log = getRegisteredBlock("stripped_dark_oak_log");
+			stripped_mangrove_log = getRegisteredBlock("stripped_mangrove_log");
+			stripped_cherry_log = getRegisteredBlock("stripped_cherry_log");
+			stripped_crimson_log = getRegisteredBlock("stripped_crimson_log");
+			stripped_warped_log = getRegisteredBlock("stripped_warped_log");
+			smithing_table = getRegisteredBlock("smithing_table");
+			end_rod = getRegisteredBlock("end_rod");
+			//slime_block = getRegisteredBlock("slime_block");
+			honey_block = getRegisteredBlock("honey_block");
+			bee_nest = getRegisteredBlock("bee_nest");
+			beehive = getRegisteredBlock("beehive");
+			white_concrete = getRegisteredBlock("white_concrete");
+			orange_concrete = getRegisteredBlock("orange_concrete");
+			magenta_concrete = getRegisteredBlock("magenta_concrete");
+			cyan_concrete = getRegisteredBlock("cyan_concrete");
+			yellow_concrete = getRegisteredBlock("yellow_concrete");
+			lime_concrete = getRegisteredBlock("lime_concrete");
+			pink_concrete = getRegisteredBlock("pink_concrete");
+			gray_concrete = getRegisteredBlock("gray_concrete");
+			light_gray_concrete = getRegisteredBlock("light_gray_concrete");
+			light_blue_concrete = getRegisteredBlock("light_blue_concrete");
+			purple_concrete = getRegisteredBlock("purple_concrete");
+			blue_concrete = getRegisteredBlock("blue_concrete");
+			brown_concrete = getRegisteredBlock("brown_concrete");
+			green_concrete = getRegisteredBlock("green_concrete");
+			red_concrete = getRegisteredBlock("red_concrete");
+			black_concrete = getRegisteredBlock("black_concrete");
+			purpur_block = getRegisteredBlock("purpur_block");
+			purpur_pillar = getRegisteredBlock("purpur_pillar");
+			//cherry_door = getRegisteredBlock("cherry_door"); //fail
 		}
 	}
 }

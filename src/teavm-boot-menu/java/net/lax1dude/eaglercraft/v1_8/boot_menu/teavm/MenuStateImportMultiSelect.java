@@ -1,4 +1,15 @@
-/*
+package net.lax1dude.eaglercraft.v1_8.boot_menu.teavm;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.teavm.jso.dom.html.HTMLElement;
+
+import com.google.common.collect.Collections2;
+
+import net.lax1dude.eaglercraft.v1_8.boot_menu.teavm.OfflineDownloadParser.ParsedOfflineAdapter;
+
+/**
  * Copyright (c) 2024 lax1dude. All Rights Reserved.
  * 
  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
@@ -13,15 +24,6 @@
  * POSSIBILITY OF SUCH DAMAGE.
  * 
  */
-
-package net.lax1dude.eaglercraft.v1_8.boot_menu.teavm;
-
-import java.util.List;
-
-import org.teavm.jso.dom.html.HTMLElement;
-
-import net.lax1dude.eaglercraft.v1_8.boot_menu.teavm.OfflineDownloadParser.ParsedOfflineAdapter;
-
 public class MenuStateImportMultiSelect extends MenuState {
 
 	protected static class BootItem implements SelectionListController.ListItem {
@@ -49,7 +51,7 @@ public class MenuStateImportMultiSelect extends MenuState {
 
 	public MenuStateImportMultiSelect(MenuState parentState, List<ParsedOfflineAdapter> parsedClients) {
 		this.parentState = parentState;
-		List<BootItem> list = parsedClients.stream().map(BootItem::new).toList();
+		List<BootItem> list = new ArrayList<>(Collections2.transform(parsedClients, BootItem::new));
 		selectionController = new CheckboxListController<BootItem>(BootMenuMain.bootMenuDOM.content_selection, list) {
 
 			@Override

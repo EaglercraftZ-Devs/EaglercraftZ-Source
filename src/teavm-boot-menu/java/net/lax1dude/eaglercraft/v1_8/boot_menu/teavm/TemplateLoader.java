@@ -1,4 +1,12 @@
-/*
+package net.lax1dude.eaglercraft.v1_8.boot_menu.teavm;
+
+import java.io.IOException;
+import java.util.HashMap;
+import java.util.Map;
+
+import net.lax1dude.eaglercraft.v1_8.EaglercraftRandom;
+
+/**
  * Copyright (c) 2024 lax1dude. All Rights Reserved.
  * 
  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
@@ -13,15 +21,6 @@
  * POSSIBILITY OF SUCH DAMAGE.
  * 
  */
-
-package net.lax1dude.eaglercraft.v1_8.boot_menu.teavm;
-
-import java.io.IOException;
-import java.util.HashMap;
-import java.util.Map;
-
-import net.lax1dude.eaglercraft.v1_8.EaglercraftRandom;
-
 public class TemplateLoader {
 
 	public static final Map<String, String> baseGlobals;

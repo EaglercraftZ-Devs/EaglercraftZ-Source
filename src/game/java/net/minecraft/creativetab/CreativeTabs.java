@@ -17,7 +17,7 @@ import net.minecraft.item.ItemStack;
  * Minecraft 1.8.8 bytecode is (c) 2015 Mojang AB. "Do not distribute!"
  * Mod Coder Pack v9.18 deobfuscation configs are (c) Copyright by the MCP Team
  * 
- * EaglercraftX 1.8 patch files (c) 2022-2025 lax1dude, ayunami2000. All Rights Reserved.
+ * EaglercraftX 1.8 patch files (c) 2022-2024 lax1dude, ayunami2000. All Rights Reserved.
  * 
  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
  * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
@@ -40,11 +40,11 @@ public abstract class CreativeTabs {
 	};
 	public static final CreativeTabs tabDecorations = new CreativeTabs(1, "decorations") {
 		public Item getTabIconItem() {
-			return Item.getItemFromBlock(Blocks.double_plant);
-		}
+			return Items.sign;
+		//}
 
-		public int getIconItemDamage() {
-			return BlockDoublePlant.EnumPlantType.PAEONIA.getMeta();
+		//public int getIconItemDamage() {
+			//return BlockDoublePlant.EnumPlantType.PAEONIA.getMeta();
 		}
 	};
 	public static final CreativeTabs tabRedstone = new CreativeTabs(2, "redstone") {
@@ -59,7 +59,7 @@ public abstract class CreativeTabs {
 	};
 	public static final CreativeTabs tabMisc = (new CreativeTabs(4, "misc") {
 		public Item getTabIconItem() {
-			return Items.lava_bucket;
+			return Items.spawn_egg;
 		}
 	}).setRelevantEnchantmentTypes(new EnumEnchantmentType[] { EnumEnchantmentType.ALL });
 	public static final CreativeTabs tabAllSearch = (new CreativeTabs(5, "search") {
@@ -69,18 +69,18 @@ public abstract class CreativeTabs {
 	}).setBackgroundImageName("item_search.png");
 	public static final CreativeTabs tabFood = new CreativeTabs(6, "food") {
 		public Item getTabIconItem() {
-			return Items.apple;
+			return Items.golden_apple;
 		}
 	};
 	public static final CreativeTabs tabTools = (new CreativeTabs(7, "tools") {
 		public Item getTabIconItem() {
-			return Items.iron_axe;
+			return Items.diamond_pickaxe;
 		}
 	}).setRelevantEnchantmentTypes(new EnumEnchantmentType[] { EnumEnchantmentType.DIGGER,
 			EnumEnchantmentType.FISHING_ROD, EnumEnchantmentType.BREAKABLE });
 	public static final CreativeTabs tabCombat = (new CreativeTabs(8, "combat") {
 		public Item getTabIconItem() {
-			return Items.golden_sword;
+			return Items.netherite_sword;
 		}
 	}).setRelevantEnchantmentTypes(new EnumEnchantmentType[] { EnumEnchantmentType.ARMOR,
 			EnumEnchantmentType.ARMOR_FEET, EnumEnchantmentType.ARMOR_HEAD, EnumEnchantmentType.ARMOR_LEGS,
@@ -92,7 +92,7 @@ public abstract class CreativeTabs {
 	};
 	public static final CreativeTabs tabMaterials = new CreativeTabs(10, "materials") {
 		public Item getTabIconItem() {
-			return Items.stick;
+			return Items.netherite_ingot;
 		}
 	};
 	public static final CreativeTabs tabInventory = (new CreativeTabs(11, "inventory") {

@@ -20,7 +20,7 @@ import net.minecraft.world.World;
  * Minecraft 1.8.8 bytecode is (c) 2015 Mojang AB. "Do not distribute!"
  * Mod Coder Pack v9.18 deobfuscation configs are (c) Copyright by the MCP Team
  * 
- * EaglercraftX 1.8 patch files (c) 2022-2025 lax1dude, ayunami2000. All Rights Reserved.
+ * EaglercraftX 1.8 patch files (c) 2022-2024 lax1dude, ayunami2000. All Rights Reserved.
  * 
  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
  * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
@@ -52,7 +52,18 @@ public class BlockOre extends Block {
 				: (this == Blocks.diamond_ore ? Items.diamond
 						: (this == Blocks.lapis_ore ? Items.dye
 								: (this == Blocks.emerald_ore ? Items.emerald
-										: (this == Blocks.quartz_ore ? Items.quartz : Item.getItemFromBlock(this)))));
+									: (this == Blocks.copper_ore ? Items.raw_copper //eaglerz stuff
+											: (this == Blocks.iron_ore ? Items.raw_iron
+													: (this == Blocks.gold_ore ? Items.raw_gold
+														: (this == Blocks.deepslate_gold_ore ? Items.raw_gold
+																: (this == Blocks.deepslate_iron_ore ? Items.raw_iron
+																		: (this == Blocks.deepslate_copper_ore ? Items.raw_copper
+																				: (this == Blocks.deepslate_coal_ore ? Items.coal
+																						: (this == Blocks.deepslate_lapis_ore ? Items.dye
+																								: (this == Blocks.deepslate_diamond_ore ? Items.diamond
+																										: (this == Blocks.deepslate_redstone_ore ? Items.redstone
+																												: (this == Blocks.deepslate_emerald_ore ? Items.emerald
+										                : (this == Blocks.quartz_ore ? Items.quartz : Item.getItemFromBlock(this))))))))))))))));//remove 3 ) if not work
 	}
 
 	/**+

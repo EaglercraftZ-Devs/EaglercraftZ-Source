@@ -220,6 +220,41 @@ public class Items {
 	public static Item prismarine_shard;
 	public static Item prismarine_crystals;
 	public static Item banner;
+	//eaglerz
+	public static Item copper_ingot;
+	public static Item raw_copper;
+	public static Item raw_iron;
+	public static Item raw_gold;
+	public static Item glow_ink_sac;
+	public static Item shield;
+	public static Item netherite_helmet;
+	public static Item netherite_chestplate;
+	public static Item netherite_leggings;
+	public static Item netherite_boots;
+	public static Item netherite_sword;
+	public static Item netherite_shovel;
+	public static Item netherite_pickaxe;
+	public static Item netherite_axe;
+	public static Item netherite_hoe;
+	public static Item netherite_ingot;
+	public static Item elytra;
+	public static Item turtle_helmet;
+	public static Item totem_of_undying;
+	public static Item crossbow;
+	public static Item end_crystal;
+	public static Item netherite_scrap;
+	public static Item scute;
+	public static Item trident;
+	public static Item spruce_boat;
+	public static Item birch_boat;
+	public static Item jungle_boat;
+	public static Item acacia_boat;
+	public static Item dark_oak_boat;
+	public static Item mangrove_boat;
+	public static Item cherry_boat;
+	public static Item marshy_choco;
+	//public static Item cherry_door; //fail
+
 
 	private static Item getRegisteredItem(String name) {
 		return (Item) Item.itemRegistry.getObject(new ResourceLocation(name));
@@ -239,6 +274,40 @@ public class Items {
 			coal = getRegisteredItem("coal");
 			diamond = getRegisteredItem("diamond");
 			iron_ingot = getRegisteredItem("iron_ingot");
+			//eaglerz
+			copper_ingot = getRegisteredItem("copper_ingot");
+			netherite_ingot = getRegisteredItem("netherite_ingot");
+			raw_copper = getRegisteredItem("raw_copper");
+			raw_iron = getRegisteredItem("raw_iron");
+			raw_gold = getRegisteredItem("raw_gold");
+			glow_ink_sac = getRegisteredItem("glow_ink_sac");
+			shield = getRegisteredItem("shield");
+			netherite_helmet = getRegisteredItem("netherite_helmet");
+			netherite_chestplate = getRegisteredItem("netherite_chestplate");
+			netherite_leggings = getRegisteredItem("netherite_leggings");
+			netherite_boots = getRegisteredItem("netherite_boots");
+			netherite_sword = getRegisteredItem("netherite_sword");
+			netherite_shovel = getRegisteredItem("netherite_shovel");
+			netherite_pickaxe = getRegisteredItem("netherite_pickaxe");
+			netherite_axe = getRegisteredItem("netherite_axe");
+			netherite_hoe = getRegisteredItem("netherite_hoe");
+			elytra = getRegisteredItem("elytra");
+			turtle_helmet = getRegisteredItem("turtle_helmet");
+			totem_of_undying = getRegisteredItem("totem_of_undying");
+			crossbow = getRegisteredItem("crossbow");
+			end_crystal = getRegisteredItem("end_crystal");
+			netherite_scrap = getRegisteredItem("netherite_scrap");
+			scute = getRegisteredItem("scute");
+			trident = getRegisteredItem("trident");
+			spruce_boat = getRegisteredItem("spruce_boat");
+			birch_boat = getRegisteredItem("birch_boat");
+			jungle_boat = getRegisteredItem("jungle_boat");
+			acacia_boat = getRegisteredItem("acacia_boat");
+			dark_oak_boat = getRegisteredItem("dark_oak_boat");
+			mangrove_boat = getRegisteredItem("mangrove_boat");
+			cherry_boat = getRegisteredItem("cherry_boat");
+			marshy_choco = getRegisteredItem("marshy_choco");
+			//cherry_door = getRegisteredItem("cherry_door"); //fail
 			gold_ingot = getRegisteredItem("gold_ingot");
 			iron_sword = getRegisteredItem("iron_sword");
 			wooden_sword = getRegisteredItem("wooden_sword");

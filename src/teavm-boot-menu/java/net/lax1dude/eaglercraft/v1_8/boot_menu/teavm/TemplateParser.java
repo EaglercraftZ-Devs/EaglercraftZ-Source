@@ -1,4 +1,16 @@
-/*
+package net.lax1dude.eaglercraft.v1_8.boot_menu.teavm;
+
+import java.io.IOException;
+import java.util.Map;
+
+import org.apache.commons.lang3.text.StrTokenizer;
+import org.json.JSONObject;
+
+import com.google.common.html.HtmlEscapers;
+
+import net.lax1dude.eaglercraft.v1_8.Base64;
+
+/**
  * Copyright (c) 2024 lax1dude. All Rights Reserved.
  * 
  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
@@ -13,19 +25,6 @@
  * POSSIBILITY OF SUCH DAMAGE.
  * 
  */
-
-package net.lax1dude.eaglercraft.v1_8.boot_menu.teavm;
-
-import java.io.IOException;
-import java.util.Map;
-
-import org.apache.commons.lang3.text.StrTokenizer;
-import org.json.JSONObject;
-
-import com.google.common.html.HtmlEscapers;
-
-import net.lax1dude.eaglercraft.v1_8.Base64;
-
 public class TemplateParser {
 
 	private static class State {

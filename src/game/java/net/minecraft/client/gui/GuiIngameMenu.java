@@ -94,6 +94,12 @@ public class GuiIngameMenu extends GuiScreen {
 				I18n.format("menu.options", new Object[0]), PauseMenuCustomizeState.icon_options_L,
 				PauseMenuCustomizeState.icon_options_L_aspect, PauseMenuCustomizeState.icon_options_R,
 				PauseMenuCustomizeState.icon_options_R_aspect));
+		//eaglerz
+		this.buttonList.add(new GuiButton(2, this.width / 2 - 100, this.height / 4 + 73 + b0, 98, 20,
+				I18n.format("gui.discord", new Object[0])));
+		this.buttonList.add(new GuiButton(3, this.width / 2 + 2, this.height / 4 + 73 + b0, 98, 20,
+				I18n.format("gui.reportbugs", new Object[0])));
+		//end here
 		this.buttonList
 				.add(lanButton = new GuiButtonWithStupidIcons(7, this.width / 2 + 2, this.height / 4 + 96 + b0, 98, 20,
 						I18n.format(LANServerController.isLANOpen() ? "menu.closeLan" : "menu.openToLan",

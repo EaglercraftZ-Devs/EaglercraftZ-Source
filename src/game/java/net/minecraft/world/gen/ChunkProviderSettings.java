@@ -106,6 +106,7 @@ public class ChunkProviderSettings {
 	public final int lapisCount;
 	public final int lapisCenterHeight;
 	public final int lapisSpread;
+	public final int copperCount;
 
 	private ChunkProviderSettings(ChunkProviderSettings.Factory settingsFactory) {
 		this.coordinateScale = settingsFactory.coordinateScale;
@@ -186,6 +187,7 @@ public class ChunkProviderSettings {
 		this.lapisCount = settingsFactory.lapisCount;
 		this.lapisCenterHeight = settingsFactory.lapisCenterHeight;
 		this.lapisSpread = settingsFactory.lapisSpread;
+		this.copperCount = settingsFactory.copperCount;
 	}
 
 	public static class Factory {
@@ -267,6 +269,7 @@ public class ChunkProviderSettings {
 		public int lapisCount = 1;
 		public int lapisCenterHeight = 16;
 		public int lapisSpread = 16;
+		public int copperCount = 20;
 
 		public static ChunkProviderSettings.Factory jsonToFactory(String parString1) {
 			if (parString1.length() == 0) {
@@ -367,6 +370,7 @@ public class ChunkProviderSettings {
 			this.lapisCount = 1;
 			this.lapisCenterHeight = 16;
 			this.lapisSpread = 16;
+			this.copperCount = 20;
 		}
 
 		public boolean equals(Object object) {

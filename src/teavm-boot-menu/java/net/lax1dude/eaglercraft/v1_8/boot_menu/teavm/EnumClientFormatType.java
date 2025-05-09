@@ -1,4 +1,10 @@
-/*
+package net.lax1dude.eaglercraft.v1_8.boot_menu.teavm;
+
+import java.util.Set;
+
+import com.google.common.collect.Sets;
+
+/**
  * Copyright (c) 2024 lax1dude. All Rights Reserved.
  * 
  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
@@ -13,13 +19,6 @@
  * POSSIBILITY OF SUCH DAMAGE.
  * 
  */
-
-package net.lax1dude.eaglercraft.v1_8.boot_menu.teavm;
-
-import java.util.Set;
-
-import com.google.common.collect.Sets;
-
 public enum EnumClientFormatType {
 	/**
 	 * Eagler 1.8, b1.3, or pre-singleplayer 1.5 offline

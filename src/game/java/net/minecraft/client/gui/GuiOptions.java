@@ -84,7 +84,11 @@ public class GuiOptions extends GuiScreen implements GuiYesNoCallback {
 						this.game_settings_1.getKeyBinding(gamesettings$options));
 				this.buttonList.add(guioptionbutton);
 			}
+			++i;
 
+			this.buttonList.add(
+				new GuiButton(420, this.width / 2 - 155 + i % 2 * 160, this.height / 6 - 12 + 24 * (i >> 1), 150, 20,
+						"Accessibility Settings..."));
 			++i;
 		}
 
@@ -202,6 +206,11 @@ public class GuiOptions extends GuiScreen implements GuiYesNoCallback {
 					this.mc.displayGuiScreen(new GuiShadersNotSupported(this,
 							I18n.format(EaglerDeferredPipeline.getReasonUnsupported())));
 				}
+			}
+			
+			if (parGuiButton.id == 420) {
+				this.mc.gameSettings.saveOptions();
+				this.mc.displayGuiScreen(new GuiAccessibility(this, this.game_settings_1));
 			}
 
 			if (parGuiButton.id == 101) {

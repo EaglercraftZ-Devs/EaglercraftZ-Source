@@ -79,6 +79,8 @@ public class ChunkProviderHell implements IChunkProvider {
 	private final GeneratorBushFeature field_177465_A = new GeneratorBushFeature(Blocks.red_mushroom);
 	private final MapGenNetherBridge genNetherBridge;
 	private final MapGenBase netherCaveGenerator;
+	private final WorldGenerator ancientDebrisGen = new WorldGenMinable(Blocks.ancient_debris.getDefaultState(), 4, 
+			BlockHelper.forBlock(Blocks.netherrack));
 	double[] noiseData1;
 	double[] noiseData2;
 	double[] noiseData3;

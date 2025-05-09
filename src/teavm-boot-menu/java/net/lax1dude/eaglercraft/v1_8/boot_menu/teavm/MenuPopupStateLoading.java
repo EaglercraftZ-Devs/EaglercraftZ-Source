@@ -1,4 +1,11 @@
-/*
+package net.lax1dude.eaglercraft.v1_8.boot_menu.teavm;
+
+import org.apache.commons.lang3.StringUtils;
+import org.teavm.jso.dom.html.HTMLElement;
+
+import net.lax1dude.eaglercraft.v1_8.EagUtils;
+
+/**
  * Copyright (c) 2024 lax1dude. All Rights Reserved.
  * 
  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
@@ -13,14 +20,6 @@
  * POSSIBILITY OF SUCH DAMAGE.
  * 
  */
-
-package net.lax1dude.eaglercraft.v1_8.boot_menu.teavm;
-
-import org.apache.commons.lang3.StringUtils;
-import org.teavm.jso.dom.html.HTMLElement;
-
-import net.lax1dude.eaglercraft.v1_8.EagUtils;
-
 public class MenuPopupStateLoading extends MenuState implements IProgressMsgCallback {
 
 	protected final String text;
