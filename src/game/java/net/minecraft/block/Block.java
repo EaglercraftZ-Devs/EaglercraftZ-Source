@@ -1595,101 +1595,107 @@ public class Block {
 		registerBlock(218, (String) "grass_path", (new BlockGrassPath()).setHardness(0.65F).setResistance(0.65F)
 				.setStepSound(soundTypeGravel).setUnlocalizedName("pathDirt")
 				.setCreativeTab(CreativeTabs.tabBlock));
-		registerBlock(219, (String) "netherite_block", 
+		registerBlock(219, (String) "warped_nylium", (new BlockNetherrack()).setHardness(0.4F).setResistance(0.4F)
+				.setStepSound(soundTypeGrass).setUnlocalizedName("nyliumWarped")
+				.setCreativeTab(CreativeTabs.tabBlock));
+		registerBlock(220, (String) "crimson_nylium", (new BlockNetherrack()).setHardness(0.4F).setResistance(0.4F)
+				.setStepSound(soundTypeGrass).setUnlocalizedName("nyliumCrimson")
+				.setCreativeTab(CreativeTabs.tabBlock));
+		registerBlock(221, (String) "netherite_block", 
 				(new Block(Material.iron, MapColor.ironColor)).setHardness(50.0F).setResistance(1200.0F)
 				.setStepSound(soundTypeMetal).setUnlocalizedName("blockNetherite")
 				.setCreativeTab(CreativeTabs.tabBlock));
-		registerBlock(220, (String) "stripped_oak_log", (new BlockStrippedLog()).setHardness(2.0F).setResistance(2.0F)
+		registerBlock(222, (String) "stripped_oak_log", (new BlockStrippedLog()).setHardness(2.0F).setResistance(2.0F)
 				.setStepSound(soundTypeWood).setUnlocalizedName("logOakStripped")
 				.setCreativeTab(CreativeTabs.tabBlock));
-		registerBlock(221, (String) "stripped_spruce_log", (new BlockStrippedLog()).setHardness(2.0F).setResistance(2.0F)
+		registerBlock(223, (String) "stripped_spruce_log", (new BlockStrippedLog()).setHardness(2.0F).setResistance(2.0F)
 				.setStepSound(soundTypeWood).setUnlocalizedName("logSpruceStripped")
 				.setCreativeTab(CreativeTabs.tabBlock));
-		registerBlock(222, (String) "stripped_birch_log", (new BlockStrippedLog()).setHardness(2.0F).setResistance(2.0F)
+		registerBlock(224, (String) "stripped_birch_log", (new BlockStrippedLog()).setHardness(2.0F).setResistance(2.0F)
 				.setStepSound(soundTypeWood).setUnlocalizedName("logBirchStripped")
 				.setCreativeTab(CreativeTabs.tabBlock));
-		registerBlock(223, (String) "stripped_jungle_log", (new BlockStrippedLog()).setHardness(2.0F).setResistance(2.0F)
+		registerBlock(225, (String) "stripped_jungle_log", (new BlockStrippedLog()).setHardness(2.0F).setResistance(2.0F)
 				.setStepSound(soundTypeWood).setUnlocalizedName("logJungleStripped")
 				.setCreativeTab(CreativeTabs.tabBlock));
-		registerBlock(224, (String) "stripped_acacia_log", (new BlockStrippedLog()).setHardness(2.0F).setResistance(2.0F)
+		registerBlock(226, (String) "stripped_acacia_log", (new BlockStrippedLog()).setHardness(2.0F).setResistance(2.0F)
 				.setStepSound(soundTypeWood).setUnlocalizedName("logAcaciaStripped")
 				.setCreativeTab(CreativeTabs.tabBlock));
-		registerBlock(225, (String) "stripped_dark_oak_log", (new BlockStrippedLog()).setHardness(2.0F).setResistance(2.0F)
+		registerBlock(227, (String) "stripped_dark_oak_log", (new BlockStrippedLog()).setHardness(2.0F).setResistance(2.0F)
 				.setStepSound(soundTypeWood).setUnlocalizedName("logOakDarkStripped")
 				.setCreativeTab(CreativeTabs.tabBlock));
-		registerBlock(226, (String) "stripped_mangrove_log", (new BlockStrippedLog()).setHardness(2.0F).setResistance(2.0F)
+		registerBlock(228, (String) "stripped_mangrove_log", (new BlockStrippedLog()).setHardness(2.0F).setResistance(2.0F)
 				.setStepSound(soundTypeWood).setUnlocalizedName("logMangroveStripped")
 				.setCreativeTab(CreativeTabs.tabBlock));
-		registerBlock(227, (String) "stripped_cherry_log", (new BlockStrippedLog()).setHardness(2.0F).setResistance(2.0F)
+		registerBlock(229, (String) "stripped_cherry_log", (new BlockStrippedLog()).setHardness(2.0F).setResistance(2.0F)
 				.setStepSound(soundTypeWood).setUnlocalizedName("logCherryStripped")
 				.setCreativeTab(CreativeTabs.tabBlock));
-		registerBlock(228, (String) "stripped_crimson_log", (new BlockStrippedLog()).setHardness(2.0F).setResistance(2.0F)
+		registerBlock(230, (String) "stripped_crimson_log", (new BlockStrippedLog()).setHardness(2.0F).setResistance(2.0F)
 				.setStepSound(soundTypeWood).setUnlocalizedName("logCrimsonStripped")
 				.setCreativeTab(CreativeTabs.tabBlock));
-		registerBlock(229, (String) "stripped_warped_log", (new BlockStrippedLog()).setHardness(2.0F).setResistance(2.0F)
+		registerBlock(231, (String) "stripped_warped_log", (new BlockStrippedLog()).setHardness(2.0F).setResistance(2.0F)
 				.setStepSound(soundTypeWood).setUnlocalizedName("logWarpedStripped")
 				.setCreativeTab(CreativeTabs.tabBlock));
-		registerBlock(230, (String) "smithing_table", (new BlockSmithing()).setHardness(2.5F).setResistance(12.5F)
+		registerBlock(231, (String) "smithing_table", (new BlockSmithing()).setHardness(2.5F).setResistance(12.5F)
 				.setStepSound(soundTypeWood).setUnlocalizedName("tableSmithing")
 				.setCreativeTab(CreativeTabs.tabDecorations));
-		registerBlock(231, (String) "end_rod", (new BlockEndRod()).setHardness(0.0F).setResistance(0.0F)
+		registerBlock(232, (String) "end_rod", (new BlockEndRod()).setHardness(0.0F).setResistance(0.0F)
 				.setStepSound(soundTypeWood).setUnlocalizedName("rodEnd")
 				.setCreativeTab(CreativeTabs.tabDecorations));
-		registerBlock(232, (String) "slime_block", (new BlockEasyLog()).setHardness(0.0F).setResistance(0.0F)
+		registerBlock(233, (String) "slime_block", (new BlockEasyLog()).setHardness(0.0F).setResistance(0.0F)
 				.setStepSound(soundTypeWood).setUnlocalizedName("blockSlime")
 				.setCreativeTab(CreativeTabs.tabDecorations));
-		registerBlock(233, (String) "honey_block", (new BlockSlime()).setHardness(0.0F).setResistance(0.0F)
+		registerBlock(234, (String) "honey_block", (new BlockSlime()).setHardness(0.0F).setResistance(0.0F)
 				.setStepSound(soundTypeWood).setUnlocalizedName("blockHoney")
 				.setCreativeTab(CreativeTabs.tabDecorations));
-		registerBlock(234, (String) "bee_nest", (new Block(Material.wood)).setHardness(0.3F).setResistance(0.3F)
+		registerBlock(235, (String) "bee_nest", (new Block(Material.wood)).setHardness(0.3F).setResistance(0.3F)
 				.setStepSound(soundTypeWood).setUnlocalizedName("nestBee")
 				.setCreativeTab(CreativeTabs.tabDecorations));
-		registerBlock(235, (String) "beehive", (new Block(Material.wood)).setHardness(0.3F).setResistance(0.3F)
+		registerBlock(236, (String) "beehive", (new Block(Material.wood)).setHardness(0.3F).setResistance(0.3F)
 				.setStepSound(soundTypeWood).setUnlocalizedName("hiveBee")
 				.setCreativeTab(CreativeTabs.tabDecorations));
-		registerBlock(236, (String) "white_concrete", (new Block(Material.clay)).setHardness(1.8F).setResistance(1.8F)
+		registerBlock(237, (String) "white_concrete", (new Block(Material.clay)).setHardness(1.8F).setResistance(1.8F)
 				.setStepSound(soundTypeStone).setUnlocalizedName("concreteWhite")
 				.setCreativeTab(CreativeTabs.tabBlock));
-		registerBlock(237, (String) "orange_concrete", (new Block(Material.clay)).setHardness(1.8F).setResistance(1.8F)
+		registerBlock(238, (String) "orange_concrete", (new Block(Material.clay)).setHardness(1.8F).setResistance(1.8F)
 				.setStepSound(soundTypeStone).setUnlocalizedName("concreteOrange")
 				.setCreativeTab(CreativeTabs.tabBlock));
-		registerBlock(238, (String) "magenta_concrete", (new Block(Material.clay)).setHardness(1.8F).setResistance(1.8F)
+		registerBlock(239, (String) "magenta_concrete", (new Block(Material.clay)).setHardness(1.8F).setResistance(1.8F)
 				.setStepSound(soundTypeStone).setUnlocalizedName("concreteMagenta")
 				.setCreativeTab(CreativeTabs.tabBlock));
-		registerBlock(239, (String) "cyan_concrete", (new Block(Material.clay)).setHardness(1.8F).setResistance(1.8F)
+		registerBlock(240, (String) "cyan_concrete", (new Block(Material.clay)).setHardness(1.8F).setResistance(1.8F)
 				.setStepSound(soundTypeStone).setUnlocalizedName("concreteCyan")
 				.setCreativeTab(CreativeTabs.tabBlock));
-		registerBlock(240, (String) "yellow_concrete", (new Block(Material.clay)).setHardness(1.8F).setResistance(1.8F)
+		registerBlock(241, (String) "yellow_concrete", (new Block(Material.clay)).setHardness(1.8F).setResistance(1.8F)
 				.setStepSound(soundTypeStone).setUnlocalizedName("concreteYellow")
 				.setCreativeTab(CreativeTabs.tabBlock));
-		registerBlock(241, (String) "lime_concrete", (new Block(Material.clay)).setHardness(1.8F).setResistance(1.8F)
+		registerBlock(242, (String) "lime_concrete", (new Block(Material.clay)).setHardness(1.8F).setResistance(1.8F)
 				.setStepSound(soundTypeStone).setUnlocalizedName("concreteLime")
 				.setCreativeTab(CreativeTabs.tabBlock));
-		registerBlock(242, (String) "pink_concrete", (new Block(Material.clay)).setHardness(1.8F).setResistance(1.8F)
+		registerBlock(243, (String) "pink_concrete", (new Block(Material.clay)).setHardness(1.8F).setResistance(1.8F)
 				.setStepSound(soundTypeStone).setUnlocalizedName("concretePink")
 				.setCreativeTab(CreativeTabs.tabBlock));
-		registerBlock(243, (String) "gray_concrete", (new Block(Material.clay)).setHardness(1.8F).setResistance(1.8F)
+		registerBlock(244, (String) "gray_concrete", (new Block(Material.clay)).setHardness(1.8F).setResistance(1.8F)
 				.setStepSound(soundTypeStone).setUnlocalizedName("concreteGray")
 				.setCreativeTab(CreativeTabs.tabBlock));
-		registerBlock(244, (String) "light_gray_concrete", (new Block(Material.clay)).setHardness(1.8F).setResistance(1.8F)
+		registerBlock(245, (String) "light_gray_concrete", (new Block(Material.clay)).setHardness(1.8F).setResistance(1.8F)
 				.setStepSound(soundTypeStone).setUnlocalizedName("concreteGrayLight")
 				.setCreativeTab(CreativeTabs.tabBlock));
-		registerBlock(245, (String) "light_blue_concrete", (new Block(Material.clay)).setHardness(1.8F).setResistance(1.8F)
+		registerBlock(246, (String) "light_blue_concrete", (new Block(Material.clay)).setHardness(1.8F).setResistance(1.8F)
 				.setStepSound(soundTypeStone).setUnlocalizedName("concreteBlueLight")
 				.setCreativeTab(CreativeTabs.tabBlock));
-		registerBlock(246, (String) "purple_concrete", (new Block(Material.clay)).setHardness(1.8F).setResistance(1.8F)
+		registerBlock(247, (String) "purple_concrete", (new Block(Material.clay)).setHardness(1.8F).setResistance(1.8F)
 				.setStepSound(soundTypeStone).setUnlocalizedName("concretePurple")
 				.setCreativeTab(CreativeTabs.tabBlock));
-		registerBlock(247, (String) "blue_concrete", (new Block(Material.clay)).setHardness(1.8F).setResistance(1.8F)
+		registerBlock(248, (String) "blue_concrete", (new Block(Material.clay)).setHardness(1.8F).setResistance(1.8F)
 				.setStepSound(soundTypeStone).setUnlocalizedName("concreteBlue")
 				.setCreativeTab(CreativeTabs.tabBlock));
-		registerBlock(248, (String) "brown_concrete", (new Block(Material.clay)).setHardness(1.8F).setResistance(1.8F)
+		registerBlock(249, (String) "brown_concrete", (new Block(Material.clay)).setHardness(1.8F).setResistance(1.8F)
 				.setStepSound(soundTypeStone).setUnlocalizedName("concreteBrown")
 				.setCreativeTab(CreativeTabs.tabBlock));
-		registerBlock(249, (String) "green_concrete", (new Block(Material.clay)).setHardness(1.8F).setResistance(1.8F)
+		registerBlock(250, (String) "green_concrete", (new Block(Material.clay)).setHardness(1.8F).setResistance(1.8F)
 				.setStepSound(soundTypeStone).setUnlocalizedName("concreteGreen")
 				.setCreativeTab(CreativeTabs.tabBlock));
-		registerBlock(250, (String) "red_concrete", (new Block(Material.clay)).setHardness(1.8F).setResistance(1.8F)
+		registerBlock(251, (String) "red_concrete", (new Block(Material.clay)).setHardness(1.8F).setResistance(1.8F)
 				.setStepSound(soundTypeStone).setUnlocalizedName("concreteRed")
 				.setCreativeTab(CreativeTabs.tabBlock));
 		registerBlock(252, (String) "black_concrete", (new Block(Material.clay)).setHardness(1.8F).setResistance(1.8F)

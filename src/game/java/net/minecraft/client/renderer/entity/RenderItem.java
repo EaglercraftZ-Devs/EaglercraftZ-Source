@@ -728,6 +728,8 @@ public class RenderItem implements IResourceManagerReloadListener {
 		this.registerBlock(Blocks.cherry_fence, "cherry_fence");
 		this.registerBlock(Blocks.ancient_debris, "ancient_debris");
 		this.registerBlock(Blocks.grass_path, "grass_path");
+		this.registerBlock(Blocks.warped_nylium, "warped_nylium");
+		this.registerBlock(Blocks.crimson_nylium, "crimson_nylium");
 		this.registerBlock(Blocks.netherite_block, "netherite_block");
 		this.registerBlock(Blocks.stripped_oak_log, "stripped_oak_log");
 		this.registerBlock(Blocks.stripped_spruce_log, "stripped_spruce_log");

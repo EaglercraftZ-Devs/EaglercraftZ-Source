@@ -26,6 +26,10 @@ public class ItemShield extends Item
         // });
     }
 
+    public int getMaxItemUseDuration(ItemStack stack) {
+        return 72000; // Same as bow duration
+    }
+
     // /**
     //  * Called when a Block is right-clicked with this Item
     //  */
@@ -70,10 +74,10 @@ public class ItemShield extends Item
     /**
      * How long it takes to use or consume an item
      */
-    public int getMaxItemUseDuration(ItemStack stack)
-    {
-        return 72000;
-    }
+//    public int getMaxItemUseDuration(ItemStack stack)
+    //{
+        //return 72000;
+    //}
 
     // public ActionResult<ItemStack> onItemRightClick(ItemStack itemStackIn, World worldIn, EntityPlayer playerIn, EnumHand hand)
     // {

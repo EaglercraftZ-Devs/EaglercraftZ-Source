@@ -599,6 +599,8 @@ public class Item {
 		registerItemBlock(Blocks.cherry_fence);
 		registerItemBlock(Blocks.ancient_debris);
 		registerItemBlock(Blocks.grass_path);
+		registerItemBlock(Blocks.warped_nylium);
+		registerItemBlock(Blocks.crimson_nylium);
 		registerItemBlock(Blocks.netherite_block);
 		registerItemBlock(Blocks.stripped_oak_log);
 		registerItemBlock(Blocks.stripped_spruce_log);

@@ -275,6 +275,8 @@ public class Blocks {
 	public static Block cherry_fence;
 	public static Block ancient_debris;
 	public static Block grass_path;
+	public static Block warped_nylium;
+	public static Block crimson_nylium;
 	public static Block netherite_block;
 	public static Block stripped_oak_log;
 	public static Block stripped_spruce_log;
@@ -544,6 +546,8 @@ public class Blocks {
 			cherry_fence = getRegisteredBlock("cherry_fence");
 			ancient_debris = getRegisteredBlock("ancient_debris");
 			grass_path = getRegisteredBlock("grass_path");
+			warped_nylium = getRegisteredBlock("warped_nylium");
+			crimson_nylium = getRegisteredBlock("crimson_nylium");
 			netherite_block = getRegisteredBlock("netherite_block");
 			stripped_oak_log = getRegisteredBlock("stripped_oak_log");
 			stripped_spruce_log = getRegisteredBlock("stripped_spruce_log");
